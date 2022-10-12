@@ -24,6 +24,5 @@ const exports = await getAssemblyExports(config.mainAssemblyName);
 const html = exports.MyClass.Greeting();
 console.log(html);
 
-
 document.getElementById("out").innerHTML = `${html}`;
 await runMainAndExit(config.mainAssemblyName, ["dotnet", "is", "great!"]);
