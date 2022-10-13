@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices.JavaScript;
 
 // ReSharper disable MemberCanBePrivate.Global
@@ -18,10 +17,10 @@ public partial class MyClass
             $"""
         <div>
             <h1>Hello, World! Greetings from WASM!</h1>
-            <p>Listening at { GetHRef()}   </p>
+            <p>Listening at {GetHRef()} </p>
             <p>This is a test!</p>
         </div>
-        """ ;
+        """;
         Console.WriteLine(text);
         return text;
     }
